@@ -3,6 +3,22 @@ body {
 	color: white;
 	}
 
+.mainContent{
+	font-family: "Courier";
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 15px;
+    color: #eee;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, .5);
+}
 #intro{
 	font-family: "Courier";
     padding-top: 180px;
@@ -67,6 +83,11 @@ h2 {
          -o-animation: fadein 1.5s; /* Opera < 12.1 */
             animation: fadein 1.5s;
 }
+
+canvas{		
+			position: fixed;
+			}
+
 @keyframes fadein {
      0% { opacity:0; }
     66% { opacity:0; }
