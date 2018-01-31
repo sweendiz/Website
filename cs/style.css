@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 body {
 	background-color: black;
 	color: white;
@@ -36,34 +37,72 @@ span:hover{background:#F00}
     padding-left: 250px;
 }
 
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
+
+section{
+  width:70%;
+  margin-left:200px;
 }
-
-.sidenav a {
-    padding: 6px 6px 6px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+#navbar{
+  overflow:hidden;
+	  width:200px;
+	  height:100%;
+	  position:fixed;
+	  background-color:#FFFFFF;
+	  top:0;
+	  left:0;
+	  z-index:499;
 }
-
-.sidenav a:hover {
-    color: #f1f1f1;
+#primary_nav{
+	  top:0px;
+	  position: fixed;
+	  display: block;
+	  left: -115px;
+	  width: 170px;
+	  height: 100%;
+	  background:rgba(43,150,182,.33);
+	  z-index:500;
 }
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+#primary_nav ul{
+	  display: block;
+	  margin-top:80px;
+	  padding-left: 5px;
+	  list-style: none;
+}
+#primary_nav ul li a{
+	  display: block;
+	  padding:0 0 25px 20px;
+	  color: #FFF;
+	  font-weight:bold;
+	  font-size:15px;
+	  text-decoration: none;
+  	-webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#primary_nav ul li a:hover, #primary_nav ul li a:active{
+	  color: #434244;
+	  padding-left:17px;
+  	text-decoration: none;
+	  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#mobile_nav{
+	  font-size:36px;
+	  position: relative;
+	  display: inline-block;
+  	top:10px;
+	  left:127px;
+  color: #FFF;
+	  text-decoration: none;
+  z-index:1000;
+}
+#mobile_nav:hover{
+  	color: #434244;
 }
 
 h1{
@@ -75,7 +114,22 @@ h1{
             animation: fadein 1s;
 }
 h2 {
+	font-size: 20pt;
 	padding-left: 50px;
+	-webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+    animation: 2s ease 0s normal forwards 1 fadein;
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+p
+{	
+	font-size: 18pt;
+	position: fixed;
+	bottom: 20;
+	padding-left: 50px;
+	padding
 	-webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
     animation: 2s ease 0s normal forwards 1 fadein;
        -moz-animation: fadein 1.5s; /* Firefox < 16 */
